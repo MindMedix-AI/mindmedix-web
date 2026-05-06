@@ -37,12 +37,16 @@ export default function FounderPage({ params: { locale } }: { params: { locale: 
             {/* Left Column: Profile Card */}
             <div className="md:col-span-1 space-y-8">
               <div className="rounded-2xl border border-white/10 bg-white/5 p-6 overflow-hidden">
-                <div className="aspect-square rounded-xl overflow-hidden mb-6 border border-white/10">
+                <div className="aspect-square rounded-xl overflow-hidden mb-6 border border-white/10 bg-[#2d8cff]/10 flex items-center justify-center relative">
                   <img 
-                    src="https://media.licdn.com/dms/image/v2/D4E03AQGichGnHbwAng/profile-displayphoto-crop_800_800/B4EZx7GPelIQAI-/0/1771591762244?e=1776902400&v=beta&t=fn3JSgwkRlrlbFOsmWPk0f--iZdDdd3yxPdDXr1I2KE" 
+                    src="/images/founder.jpg" 
                     alt="Sassi Hamdi"
-                    className="w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-cover z-20"
+                    onError={(e) => {
+                      (e.target as HTMLImageElement).style.opacity = '0';
+                    }}
                   />
+                  <span className="text-[#2d8cff] text-4xl font-bold z-10">SH</span>
                 </div>
                 <h1 className="text-2xl font-bold text-white mb-2">Sassi Hamdi</h1>
                 <p className="text-[#2d8cff] font-medium text-sm uppercase tracking-wider mb-6">

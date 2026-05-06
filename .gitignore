@@ -9,7 +9,7 @@ out/
 
 # Production
 build
-dist
+12: dist
 
 # Misc
 .DS_Store
@@ -45,4 +45,5 @@ data/
 *.pages
 *.png
 !public/*.png
+!public/images/*
 logoo.png

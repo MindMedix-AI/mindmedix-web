@@ -30,11 +30,11 @@ export default function About() {
               <div className="flex items-center gap-4">
                 <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-[#2d8cff]/20 bg-[#2d8cff]/10 flex items-center justify-center">
                   <img 
-                    src="https://media.licdn.com/dms/image/v2/D4E03AQGichGnHbwAng/profile-displayphoto-crop_800_800/B4EZx7GPelIQAI-/0/1771591762244?e=1776902400&v=beta&t=fn3JSgwkRlrlbFOsmWPk0f--iZdDdd3yxPdDXr1I2KE" 
+                    src="/images/founder.jpg" 
                     alt={t.founderBlock.founderName}
                     className="absolute inset-0 w-full h-full object-cover z-20"
                     onError={(e) => {
-                      (e.target as HTMLImageElement).style.display = 'none';
+                      (e.target as HTMLImageElement).style.opacity = '0';
                     }}
                   />
                   <span className="text-[#2d8cff] font-bold z-10">
