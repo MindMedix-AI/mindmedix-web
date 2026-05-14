@@ -9,7 +9,7 @@ out/
 
 # Production
 build
-12: dist
+dist
 
 # Misc
 .DS_Store
