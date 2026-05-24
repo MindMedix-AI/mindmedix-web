@@ -8,7 +8,7 @@ export const translations = {
       platform: 'Piattaforma',
       impact: 'Impatto',
       about: 'Chi siamo',
-      founder: 'Fondatore',
+      founder: 'Team',
       contact: 'Contatti',
       requestPilot: 'Richiedi Pilot',
       liveDemo: 'Demo Live',
@@ -125,6 +125,26 @@ export const translations = {
         founderName: 'Sassi Hamdi',
         founderRole: 'Founder & CEO',
       },
+      teamBlock: {
+        title: 'Team & Advisory Board',
+        subtitle: 'Competenze cliniche ed ingegneristiche per la stabilità operativa degli ospedali.',
+        members: [
+          {
+            name: 'Dr. Pietro Coletta',
+            role: 'Clinical Advisor',
+            image: '/images/doctor.jpeg',
+            linkedin: 'https://www.linkedin.com/in/pietro-coletta-a9279960/',
+            bio: 'Chirurgo attivo presso Villa Igea (Ancona) con una profonda conoscenza delle dinamiche degli ospedali privati. Pietro vanta un\'esperienza clinica diretta nella gestione del burnout e delle carenze di personale, guidando la validazione medica dei modelli predittivi e supportando l\'accesso ai network ospedalieri nella regione Marche.'
+          },
+          {
+            name: 'Asma Taba',
+            role: 'Data Analyst Engineer',
+            image: '/images/asma.jpeg',
+            linkedin: 'https://www.linkedin.com/in/asma-taba/',
+            bio: 'Specialista in modellazione dei dati della forza lavoro sanitaria e ottimizzazione di pipeline ML. Asma si occupa di advanced feature engineering su serie temporali complesse ad alta frequenza per potenziare e ottimizzare il motore predittivo.'
+          }
+        ]
+      },
       p1: 'MindMedix AI è una piattaforma di workforce intelligence per ospedali europei. Aiutiamo i sistemi sanitari a prevedere carenze di personale e rischi di burnout con 3 settimane di anticipo, utilizzando dati operativi anonimizzati.',
       p2: 'Sotto la guida di Sassi Hamdi, il nostro team unisce eccellenza tecnica in sistemi AI enterprise con il rigoroso rispetto delle normative europee sulla privacy.',
       p3: 'La nostra visione è un sistema sanitario dove la tecnologia anticipa le crisi operative, permettendo ai direttori sanitari di agire prima che il burnout impatti la qualità delle cure.',
@@ -212,7 +232,7 @@ export const translations = {
       emailLabel: 'Email istituzionale',
     },
     footer: {
-      links: { challenge: 'Sfida', solution: 'Soluzione', platform: 'Piattaforma', impact: 'Impatto', contact: 'Contatti', privacy: 'Privacy', terms: 'Termini', founder: 'Chi è il Fondatore' },
+      links: { challenge: 'Sfida', solution: 'Soluzione', platform: 'Piattaforma', impact: 'Impatto', contact: 'Contatti', privacy: 'Privacy', terms: 'Termini', founder: 'Team' },
       copyright: '© {year} MindMedix AI. Tutti i diritti riservati.',
       authorityLine: 'MindMedix AI è una piattaforma di workforce intelligence per ospedali europei, fondata da Sassi Hamdi. Sede Legale: Ancona, Italia.',
       founderLink: 'Guidato da Sassi Hamdi, Founder & CEO'
@@ -232,7 +252,7 @@ export const translations = {
       platform: 'Platform',
       impact: 'Impact',
       about: 'About',
-      founder: 'Founder',
+      founder: 'Team',
       contact: 'Contact',
       requestPilot: 'Request Pilot',
       liveDemo: 'Live Demo',
@@ -349,6 +369,26 @@ export const translations = {
         founderName: 'Sassi Hamdi',
         founderRole: 'Founder & CEO',
       },
+      teamBlock: {
+        title: 'Team & Advisory Board',
+        subtitle: 'Uniting clinical expertise and data engineering to protect the healthcare workforce.',
+        members: [
+          {
+            name: 'Dr. Pietro Coletta',
+            role: 'Clinical Advisor',
+            image: '/images/doctor.jpeg',
+            linkedin: 'https://www.linkedin.com/in/pietro-coletta-a9279960/',
+            bio: 'Practicing surgeon at Villa Igea (Ancona) with deep expertise in private hospital operations. Pietro brings first-hand clinical experience with staffing crises and burnout, driving the medical validation and regional hospital network integration of our predictive models.'
+          },
+          {
+            name: 'Asma Taba',
+            role: 'Data Analyst Engineer',
+            image: '/images/asma.jpeg',
+            linkedin: 'https://www.linkedin.com/in/asma-taba/',
+            bio: 'Specialist in healthcare workforce data modeling and machine learning pipeline design. Asma conducts advanced feature engineering on high-frequency healthcare time-series data to optimize and power our predictive operational intelligence engine.'
+          }
+        ]
+      },
       p1: 'MindMedix AI is a workforce intelligence platform for European hospitals. We help healthcare systems anticipate staffing shortages and burnout risks 3 weeks in advance, using anonymized operational data.',
       p2: 'Under the leadership of Sassi Hamdi, our team combines technical excellence in enterprise AI systems with a strict commitment to European privacy regulations.',
       p3: 'Our vision is a healthcare system where technology anticipates operational crises, allowing hospital directors to act before burnout impacts the quality of care.',
@@ -436,7 +476,7 @@ export const translations = {
       emailLabel: 'Institutional contact',
     },
     footer: {
-      links: { challenge: 'Challenge', solution: 'Solution', platform: 'Platform', impact: 'Impact', contact: 'Contact', privacy: 'Privacy', terms: 'Terms', founder: 'Meet the Founder' },
+      links: { challenge: 'Challenge', solution: 'Solution', platform: 'Platform', impact: 'Impact', contact: 'Contact', privacy: 'Privacy', terms: 'Terms', founder: 'Team' },
       copyright: '© {year} MindMedix AI. All rights reserved.',
       authorityLine: 'MindMedix AI is a workforce intelligence platform for European hospitals, founded by Sassi Hamdi. HQ: Ancona, Italy.',
       founderLink: 'Led by Sassi Hamdi, Founder & CEO'

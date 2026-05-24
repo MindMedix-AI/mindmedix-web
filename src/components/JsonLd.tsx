@@ -22,7 +22,7 @@ export default function JsonLd() {
           'availableLanguage': ['Italian', 'English']
         },
         'founder': {
-          '@id': 'https://mindmedixai.health/en/founder/#person'
+          '@id': 'https://mindmedixai.health/en/team/#person'
         },
         'sameAs': [
           'https://www.linkedin.com/company/mindmedix-ai'
@@ -30,10 +30,10 @@ export default function JsonLd() {
       },
       {
         '@type': 'Person',
-        '@id': 'https://mindmedixai.health/en/founder/#person',
+        '@id': 'https://mindmedixai.health/en/team/#person',
         'name': 'Sassi Hamdi',
         'jobTitle': 'Founder & CEO',
-        'url': 'https://mindmedixai.health/en/founder',
+        'url': 'https://mindmedixai.health/en/team',
         'worksFor': {
           '@id': 'https://mindmedixai.health/#organization'
         },

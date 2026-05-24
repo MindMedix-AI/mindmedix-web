@@ -61,7 +61,7 @@ export default function Header() {
           <Link href={l('/about')} className="text-sm text-slate-400 hover:text-white transition">
             {t.about}
           </Link>
-          <Link href={l('/founder')} className="text-sm text-slate-400 hover:text-white transition">
+          <Link href={l('/team')} className="text-sm text-slate-400 hover:text-white transition">
             {t.founder}
           </Link>
           <a href={l('/#contact')} className="text-sm font-medium text-[#2d8cff] hover:text-[#5cadff] transition">
@@ -123,7 +123,7 @@ export default function Header() {
           <a href={l('/#problem')} className="text-slate-400 hover:text-white" onClick={() => setMobileMenuOpen(false)}>{t.challenge}</a>
           <a href={l('/#solution')} className="text-slate-400 hover:text-white" onClick={() => setMobileMenuOpen(false)}>{t.solution}</a>
           <Link href={l('/about')} className="text-slate-400 hover:text-white" onClick={() => setMobileMenuOpen(false)}>{t.about}</Link>
-          <Link href={l('/founder')} className="text-slate-400 hover:text-white" onClick={() => setMobileMenuOpen(false)}>{t.founder}</Link>
+          <Link href={l('/team')} className="text-slate-400 hover:text-white" onClick={() => setMobileMenuOpen(false)}>{t.founder}</Link>
           <a href={l('/#contact')} className="text-[#2d8cff]" onClick={() => setMobileMenuOpen(false)}>{t.contact}</a>
           <Link href={l('/demo')} className="py-2 border border-[#2d8cff] text-[#2d8cff] rounded-lg font-medium flex items-center justify-center gap-2" onClick={() => setMobileMenuOpen(false)}>
             <span className="relative flex h-2 w-2">
