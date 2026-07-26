@@ -1,31 +1,6 @@
-# MindMedix AI — Hospital Operations Intelligence
+This repository contains organization-wide GitHub configuration and community files for MindMedix AI.
 
-<div align="center">
-
-![MindMedix AI](public/logo.png)
-
-**Predictive Workforce & Hospital Operations Intelligence Platform**
-
-[![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3-38bdf8?logo=tailwindcss)](https://tailwindcss.com/)
-[![License](https://img.shields.io/badge/License-Private-red)](LICENSE)
-
-[mindmedixai.health](https://mindmedixai.health) · Ancona, Italy · European Healthcare AI
-
-</div>
-
----
-
-## Overview
-
-This repository contains the official institutional landing page for **MindMedix AI**, a European deep-tech healthcare AI initiative developing predictive operational intelligence infrastructure for hospitals and healthcare systems.
-
-The landing page is designed to establish institutional credibility with:
-- Hospital directors and administrators
-- Healthcare systems and regional authorities
-- Strategic innovation partners
-- Investors and public institutions
+Do not modify other repositories.
 
 ---
 
