@@ -1,0 +1,45 @@
+# MindMedix AI — Hospital Operations Intelligence
+> https://mindmedixai.health
+> contact@mindmedixai.health
+> Ancona, Italy
+
+MindMedix AI is a European healthcare AI startup building predictive operational intelligence for hospitals. We help healthcare systems anticipate workforce shortages, detect burnout risks, and optimize operations before crises occur.
+
+## Key Facts
+
+- Founded: 2024
+- Headquarters: Ancona, Italy
+- Focus: Predictive hospital operations intelligence
+- Validation: 97% recall on staffing shortage prediction, 97.1% LOWO accuracy
+- Dataset: 34 real hospital wards (Ceschia et al. 2023)
+- Compliance: GDPR-ready, EU AI Act-ready
+- Prediction horizon: 3 weeks in advance
+- Cost impact: €2,400 saved per prevented crisis
+
+## Core Offerings
+
+- Predictive workforce intelligence for hospitals
+- Staff shortage forecasting and burnout risk detection
+- Operational decision support for hospital administrators
+- Privacy-first healthcare data infrastructure
+
+## Target Audience
+
+- Hospital directors and administrators
+- Healthcare operations leaders
+- Regional health authorities
+- Strategic innovation partners
+
+## Technology
+
+- Next.js, TypeScript, React, Tailwind CSS (web)
+- NestJS, PostgreSQL, Redis (backend)
+- Python, XGBoost (prediction engine)
+- Docker, Kubernetes, Terraform (infrastructure)
+
+## Links
+
+- Website: https://mindmedixai.health
+- Email: contact@mindmedixai.health
+- LinkedIn: https://www.linkedin.com/company/mindmedix-ai
+- GitHub: https://github.com/MindMedix-AI

@@ -18,22 +18,24 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   
   const siteTitle = isEn 
     ? 'MindMedix AI | Workforce Intelligence for European Hospitals' 
-    : 'MindMedix AI | Workforce Intelligence Ospedaliera | Sassi Hamdi'
+    : 'MindMedix AI | Intelligenza Operativa Ospedaliera | Sassi Hamdi'
   
   const siteDesc = isEn
-    ? 'Predictive workforce intelligence for European hospitals. Forecast staffing shortages and burnout 3 weeks in advance. Validated on 34 real wards. Founded by Sassi Hamdi.'
-    : 'MindMedix AI è la piattaforma di workforce intelligence fondata da Sassi Hamdi per gli ospedali europei. Prevedi carenze di personale e burnout con 3 settimane di anticipo.'
+    ? 'Predictive workforce intelligence for European hospitals. Forecast staffing shortages, operational stress, and burnout risk 3 weeks in advance. Validated on 34 real hospital wards. 97% crisis recall. Founded by Sassi Hamdi.'
+    : 'Intelligenza operativa predittiva per gli ospedali europei. Prevedi carenze di personale, stress operativo e rischio burnout con 3 settimane di anticipo. Validato su 34 reparti reali. Recall crisi 97%. Fondatore Sassi Hamdi.'
+
+  const ogImage = 'https://mindmedixai.health/mindmedix_ai_cover.jpeg'
 
   return {
     metadataBase: new URL('https://mindmedixai.health'),
     title: {
-      template: `%s | ${isEn ? 'MindMedix AI' : 'MindMedix AI'}`,
+      template: `%s | MindMedix AI`,
       default: siteTitle,
     },
     description: siteDesc,
     keywords: isEn 
-      ? 'MindMedix AI, Sassi Hamdi, hospital operations AI, workforce intelligence, predictive analytics healthcare, burnout prevention'
-      : 'MindMedix AI, Sassi Hamdi, AI ospedaliera, intelligenza forza lavoro, Hospital Operations AI, analytics predittivi sanità',
+      ? 'MindMedix AI, Sassi Hamdi, hospital operations AI, workforce intelligence, predictive analytics healthcare, burnout prevention, staffing shortage prediction, hospital operations platform, European healthcare AI, operational intelligence hospitals'
+      : 'MindMedix AI, Sassi Hamdi, AI ospedaliera, intelligenza forza lavoro, Hospital Operations AI, analytics predittivi sanità, previsione carenze personale, burnout infermieri, piattaforma operativa ospedaliera, AI sanitaria Europa',
     icons: {
       icon: '/icon.png',
       apple: '/apple-icon.png',
@@ -46,10 +48,13 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       url: 'https://mindmedixai.health',
       siteName: 'MindMedix AI',
       locale: isEn ? 'en_US' : 'it_IT',
+      images: [{ url: ogImage, width: 1200, height: 630, alt: 'MindMedix AI - Hospital Operations Intelligence' }],
     },
     twitter: {
       card: 'summary_large_image',
       title: siteTitle,
+      description: siteDesc,
+      images: [ogImage],
       creator: '@sassihamdi',
     },
     alternates: {
@@ -81,7 +86,7 @@ export default function RootLayout({
       <body className="antialiased min-h-screen bg-[#0a1929] text-slate-100 font-sans">
         <LanguageProvider initialLocale={locale as any}>
           <SkipLink />
-          <JsonLd />
+          <JsonLd locale={locale} />
           {children}
           <CookieBanner />
         </LanguageProvider>
