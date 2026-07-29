@@ -1,36 +1,44 @@
 # MindMedix AI
 
-A healthcare AI startup building predictive operational intelligence for hospitals.
+Predictive operational intelligence for European hospitals.
 
 ## About
 
-MindMedix AI focuses on healthcare AI that delivers hospital operations intelligence through a privacy-first approach. We help hospitals anticipate operational risks, workforce challenges, and improve decision-making using responsible AI.
+MindMedix AI delivers hospital operations intelligence through a privacy-first approach, helping healthcare systems anticipate workforce challenges, optimize resources, and improve decision-making with responsible AI.
 
 ## What We Build
 
-- **Predictive operational intelligence** - Anticipatory analytics for hospital operations
-- **Workforce resilience analytics** - Staff planning and resource optimization
-- **AI-assisted decision support** - Data-driven insights for hospital administrators
-- **Healthcare data systems** - Secure, privacy-first data platforms
+| Area | Focus |
+|------|-------|
+| **Predictive Operations** | Anticipatory analytics for hospital workforce and resource planning |
+| **Workforce Resilience** | Staff planning and optimization for clinical teams |
+| **Decision Support** | Data-driven insights for hospital administrators |
+| **Data Platforms** | Secure, privacy-first healthcare data infrastructure |
 
 ## Technology
 
-- Artificial Intelligence
-- Machine Learning
-- Large Language Models
-- Backend systems
-- Data platforms
-- Cloud infrastructure
+Artificial Intelligence · Machine Learning · Large Language Models · Cloud Infrastructure · Backend Systems · Data Platforms
 
 ## Engineering Principles
 
-- Security by design
-- Privacy-first development
-- Responsible AI
-- Reliable engineering
+Security by Design · Privacy-First Development · Responsible AI · Reliable Engineering
+
+## Organization Structure
+
+```
+MindMedix-AI/
+├── mindmedix-web          # Public web experience (marketing, dashboard)
+├── mindmedix-platform     # Backend APIs and services (private)
+├── mindmedix-ai-engine    # AI models and inference (private)
+├── mindmedix-datasets     # Dataset definitions (private)
+├── mindmedix-infrastructure # DevOps, K8s, Terraform (private)
+├── mindmedix-docs         # Technical documentation (private)
+├── .github                # Organization governance
+└── profile                # Organization profile (you are here)
+```
 
 ## Contact
 
-**Website:** https://www.mindmedixai.health
-
-**Email:** contact@mindmedixai.health
+**Website**: [mindmedixai.health](https://mindmedixai.health)
+**Email**: contact@mindmedixai.health
+**Location**: Ancona, Italy

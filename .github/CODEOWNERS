@@ -1,0 +1,18 @@
+# CODEOWNERS - Code review ownership per directory/pattern
+
+# Default reviewers for all changes
+* @MindMedix-AI/core-engineering
+
+# Frontend / web application
+/src/** @MindMedix-AI/frontend-team
+
+# Infrastructure and CI/CD
+/.github/** @MindMedix-AI/infrastructure-team
+/Dockerfile @MindMedix-AI/infrastructure-team
+
+# Documentation
+/docs/** @MindMedix-AI/core-engineering
+README.md @MindMedix-AI/core-engineering
+
+# Security-sensitive files
+SECURITY.md @MindMedix-AI/core-engineering

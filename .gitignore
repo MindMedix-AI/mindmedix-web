@@ -47,3 +47,14 @@ data/
 !public/*.png
 !public/images/*
 logoo.png
+
+# Separate repositories (not part of mindmedix-web)
+MindMedix-AI-model/
+MindMedix-nrp-instances-source/
+
+# Agent artifacts (not part of public repository)
+CLAUDE.md
+skills-lock.json
+.agents/
+.claude/
+.wolf/
