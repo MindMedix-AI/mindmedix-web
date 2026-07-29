@@ -1,0 +1,96 @@
+# MindMedix AI — Complete Company Profile
+
+> **Website:** https://mindmedixai.health
+> **Email:** contact@mindmedixai.health  
+> **Location:** Ancona, Italy
+> **Founded:** 2024
+> **Founder:** Sassi Hamdi
+
+---
+
+## What MindMedix AI Does
+
+MindMedix AI delivers predictive operational intelligence for European hospitals. We help healthcare systems anticipate workforce challenges, optimize resources, and improve decision-making through responsible AI.
+
+Our platform forecasts staffing shortages, operational stress, and burnout risks **3 weeks in advance**, giving hospital administrators actionable time to intervene.
+
+## Validation
+
+| Metric | Value |
+|--------|-------|
+| Crisis detection recall | 97% |
+| Overall accuracy (LOWO CV) | 97.1% |
+| Validation dataset | 34 real hospital wards |
+| Average savings per prevented crisis | €2,400 |
+| Prediction horizon | 3 weeks |
+
+## Target Audience
+
+- Hospital directors and administrators
+- Healthcare operations leaders
+- HR directors in healthcare systems
+- Regional health authorities (Italy, Europe)
+- Strategic innovation partners
+- Investors in healthcare AI
+
+## Key Problems Solved
+
+1. **Structural nursing shortage**: 175,000 unfilled positions in Italy alone
+2. **Emergency overtime costs**: €2.4B annual impact from unplanned overtime
+3. **Burnout crisis**: 59% of staff report chronic stress
+4. **Reactive operations**: Most hospitals discover crises only when they occur
+
+## How It Works
+
+1. **Data ingestion**: Anonymized shift schedules, absenteeism, patient acuity
+2. **Feature engineering**: 30+ operational risk indicators
+3. **Prediction model**: XGBoost multiclass classifier trained on 34 hospital wards
+4. **Alert system**: 3-week-ahead risk flags per ward (green/yellow/red)
+5. **Dashboard**: Board-level operational intelligence interface
+
+## Engineering Principles
+
+- Security by Design
+- Privacy by Design (GDPR Art. 89)
+- Responsible AI
+- Accessibility (WCAG 2.1 AA)
+- Reliability
+- Maintainability
+
+## Compliance & Standards
+
+- GDPR ready
+- EU AI Act ready
+- ISO 27001 readiness (in progress)
+- Not a medical device (no clinical decision support)
+- Zero patient data — only anonymized operational metadata
+
+## Technology Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Web frontend | Next.js, TypeScript, React, Tailwind CSS |
+| Backend | NestJS, PostgreSQL, Redis |
+| AI/ML | Python, XGBoost, scikit-learn |
+| Infrastructure | Docker, Kubernetes, Terraform |
+| CI/CD | GitHub Actions, CodeQL |
+| Monitoring | Grafana, Prometheus |
+
+## Repository Architecture (GitHub)
+
+- **mindmedix-web** (Public): Marketing site, customer dashboard, hospital portal
+- **mindmedix-platform** (Private): Backend APIs, auth, hospital integrations
+- **mindmedix-ai-engine** (Private): Prediction models, inference, evaluation
+- **mindmedix-datasets** (Private): Dataset schemas, synthetic generators
+- **mindmedix-infrastructure** (Private): Docker, K8s, Terraform, monitoring
+- **mindmedix-docs** (Private): Architecture, ADRs, runbooks, compliance
+- **sdk-typescript** (Public): TypeScript SDK for MindMedix AI APIs
+- **sdk-python** (Public): Python SDK for MindMedix AI APIs
+
+## Contact
+
+- Website: https://mindmedixai.health
+- Email: contact@mindmedixai.health
+- LinkedIn: https://www.linkedin.com/company/mindmedix-ai
+- GitHub: https://github.com/MindMedix-AI
+- Location: Ancona, Italy
