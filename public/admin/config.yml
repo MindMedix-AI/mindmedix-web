@@ -1,0 +1,78 @@
+local_backend: true
+
+backend:
+  name: github
+  repo: MindMedix-AI/mindmedix-web
+  branch: main
+  base_url: https://mindmedixai.health
+  auth_endpoint: api/decap/auth
+
+site_url: https://mindmedixai.health
+display_url: https://mindmedixai.health
+logo_url: /logo.png
+
+media_folder: public/images/blog
+public_folder: /images/blog
+
+slug:
+  encoding: ascii
+  clean_accents: true
+
+collections:
+  - name: "blog_en"
+    label: "Blog (English)"
+    label_singular: "Post"
+    folder: "content/blog/en"
+    create: true
+    delete: true
+    preview_path: "en/blog/{{slug}}"
+    extension: mdx
+    format: frontmatter
+    summary: "{{title}} — {{date | date('YYYY-MM-DD')}}"
+    sortable_fields: ["date", "title"]
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Category", name: "category", widget: "select", options: ["Product", "Engineering", "Healthcare AI", "Hospital Operations", "Research", "Company"]}
+      - {label: "Featured Image", name: "image", widget: "image", required: false}
+      - {label: "Author", name: "author", widget: "relation", collection: "authors", search_fields: ["name"], value_field: "name", display_fields: ["name"], required: false}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Body", name: "body", widget: "markdown", minimal: false, buttons: ["bold", "italic", "heading-one", "heading-two", "heading-three", "quote", "code", "link", "bulleted-list", "numbered-list"]}
+
+  - name: "blog_it"
+    label: "Blog (Italiano)"
+    label_singular: "Articolo"
+    folder: "content/blog/it"
+    create: true
+    delete: true
+    preview_path: "it/blog/{{slug}}"
+    extension: mdx
+    format: frontmatter
+    summary: "{{title}} — {{date | date('YYYY-MM-DD')}}"
+    sortable_fields: ["date", "title"]
+    fields:
+      - {label: "Titolo", name: "title", widget: "string"}
+      - {label: "Data", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false}
+      - {label: "Descrizione", name: "description", widget: "string"}
+      - {label: "Categoria", name: "category", widget: "select", options: ["Prodotto", "Ingegneria", "AI Sanitaria", "Operazioni Ospedaliere", "Ricerca", "Azienda"]}
+      - {label: "Immagine", name: "image", widget: "image", required: false}
+      - {label: "Autore", name: "author", widget: "relation", collection: "authors", search_fields: ["name"], value_field: "name", display_fields: ["name"], required: false}
+      - {label: "Tag", name: "tags", widget: "list", required: false}
+      - {label: "Contenuto", name: "body", widget: "markdown", minimal: false, buttons: ["bold", "italic", "heading-one", "heading-two", "heading-three", "quote", "code", "link", "bulleted-list", "numbered-list"]}
+
+  - name: "authors"
+    label: "Authors"
+    label_singular: "Author"
+    folder: "content/authors"
+    create: true
+    delete: true
+    extension: md
+    format: frontmatter
+    summary: "{{name}}"
+    fields:
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Role", name: "role", widget: "string"}
+      - {label: "Bio", name: "bio", widget: "text"}
+      - {label: "Avatar", name: "avatar", widget: "image", required: false}
+      - {label: "LinkedIn", name: "linkedin", widget: "string", required: false}

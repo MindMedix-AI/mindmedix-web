@@ -15,9 +15,10 @@ function getLocale(request: NextRequest) {
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
   
-  // Skip public files and API routes
+  // Skip public files, API routes, and CMS admin
   if (
     pathname.startsWith('/api') ||
+    pathname.startsWith('/admin') ||
     pathname.includes('.') ||
     pathname.includes('/logo.png')
   ) {
@@ -41,6 +42,6 @@ export function middleware(request: NextRequest) {
 export const config = {
   // Matcher ignoring `/_next/` and `/api/`
   matcher: [
-    '/((?!api|_next/static|_next/image|favicon.ico|logo.png|MindMedix|mindmedix).*)',
+    '/((?!api|admin|_next/static|_next/image|favicon.ico|logo.png|MindMedix|mindmedix).*)',
   ],
 }

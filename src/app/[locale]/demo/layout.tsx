@@ -13,6 +13,9 @@ export async function generateMetadata(
       : 'Demo interattiva: scopri come MindMedix AI prevede le crisi del personale 3 settimane prima. 97% di rilevamento. Validato su 34 reparti reali.',
     alternates: {
       canonical: `/${locale}/demo`,
+      types: {
+        'application/rss+xml': '/feed.xml',
+      },
     },
   }
 }

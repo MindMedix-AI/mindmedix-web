@@ -27,6 +27,7 @@ export default function Footer() {
             <a href={l('/#how-it-works')} className="hover:text-slate-300 transition">{t.links.platform}</a>
             <a href={l('/#value')} className="hover:text-slate-300 transition">{t.links.impact}</a>
             <Link href={l('/team')} className="hover:text-slate-300 transition">{t.links.founder}</Link>
+            <Link href={l('/blog')} className="hover:text-slate-300 transition">{t.links.blog}</Link>
             <Link href={l('/privacy')} className="hover:text-slate-300 transition">{t.links.privacy}</Link>
             <Link href={l('/terms')} className="hover:text-slate-300 transition">{t.links.terms}</Link>
           </div>

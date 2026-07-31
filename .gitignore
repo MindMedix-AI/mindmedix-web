@@ -58,3 +58,6 @@ skills-lock.json
 .agents/
 .claude/
 .wolf/
+
+# Decap CMS source maps (not needed in production)
+public/admin/lib/*.map
