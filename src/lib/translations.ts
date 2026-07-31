@@ -9,6 +9,7 @@ export const translations = {
       impact: 'Impatto',
       about: 'Chi siamo',
       founder: 'Team',
+      blog: 'Blog',
       contact: 'Contatti',
       requestPilot: 'Richiedi Pilot',
       liveDemo: 'Demo Live',
@@ -232,7 +233,7 @@ export const translations = {
       emailLabel: 'Email istituzionale',
     },
     footer: {
-      links: { challenge: 'Sfida', solution: 'Soluzione', platform: 'Piattaforma', impact: 'Impatto', contact: 'Contatti', privacy: 'Privacy', terms: 'Termini', founder: 'Team' },
+      links: { challenge: 'Sfida', solution: 'Soluzione', platform: 'Piattaforma', impact: 'Impatto', blog: 'Blog', contact: 'Contatti', privacy: 'Privacy', terms: 'Termini', founder: 'Team' },
       copyright: '© {year} MindMedix AI. Tutti i diritti riservati.',
       authorityLine: 'MindMedix AI è una piattaforma di workforce intelligence per ospedali europei, fondata da Sassi Hamdi. Sede Legale: Ancona, Italia.',
       founderLink: 'Guidato da Sassi Hamdi, Founder & CEO'
@@ -253,6 +254,7 @@ export const translations = {
       impact: 'Impact',
       about: 'About',
       founder: 'Team',
+      blog: 'Blog',
       contact: 'Contact',
       requestPilot: 'Request Pilot',
       liveDemo: 'Live Demo',
@@ -476,7 +478,7 @@ export const translations = {
       emailLabel: 'Institutional contact',
     },
     footer: {
-      links: { challenge: 'Challenge', solution: 'Solution', platform: 'Platform', impact: 'Impact', contact: 'Contact', privacy: 'Privacy', terms: 'Terms', founder: 'Team' },
+      links: { challenge: 'Challenge', solution: 'Solution', platform: 'Platform', impact: 'Impact', blog: 'Blog', contact: 'Contact', privacy: 'Privacy', terms: 'Terms', founder: 'Team' },
       copyright: '© {year} MindMedix AI. All rights reserved.',
       authorityLine: 'MindMedix AI is a workforce intelligence platform for European hospitals, founded by Sassi Hamdi. HQ: Ancona, Italy.',
       founderLink: 'Led by Sassi Hamdi, Founder & CEO'

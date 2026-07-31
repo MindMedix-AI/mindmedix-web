@@ -1,4 +1,5 @@
 import { MetadataRoute } from 'next'
+import { getAllSlugs } from '@/lib/posts'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://mindmedixai.health'
@@ -15,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/about', priority: 0.8, changeFreq: 'monthly' as const },
     { path: '/privacy', priority: 0.3, changeFreq: 'yearly' as const },
     { path: '/terms', priority: 0.3, changeFreq: 'yearly' as const },
+    { path: '/blog', priority: 0.9, changeFreq: 'weekly' as const },
   ]
 
   const entries: MetadataRoute.Sitemap = []
@@ -30,7 +32,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
-  // Root redirects
+  const slugs = getAllSlugs()
+  for (const { slug, locale } of slugs) {
+    entries.push({
+      url: `${baseUrl}/${locale}/blog/${slug}`,
+      lastModified: weekly,
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    })
+  }
+
   entries.push({
     url: baseUrl,
     lastModified: weekly,

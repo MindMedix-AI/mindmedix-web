@@ -11,6 +11,9 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       : 'Incontra il team di MindMedix AI. Uniamo competenze cliniche e ingegneria dei dati per proteggere la forza lavoro e prevenire le carenze di personale negli ospedali.',
     alternates: {
       canonical: `/${locale}/team`,
+      types: {
+        'application/rss+xml': '/feed.xml',
+      },
     },
   }
 }

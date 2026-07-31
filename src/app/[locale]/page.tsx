@@ -33,6 +33,9 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     },
     alternates: {
       canonical: `/${locale}`,
+      types: {
+        'application/rss+xml': '/feed.xml',
+      },
     },
   }
 }

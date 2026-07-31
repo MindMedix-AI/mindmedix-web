@@ -65,6 +65,9 @@ export async function generateMetadata({ params: { locale } }: { params: { local
         'en-GB': '/en',
         'x-default': '/it',
       },
+      types: {
+        'application/rss+xml': '/feed.xml',
+      },
     },
     robots: {
       index: true,

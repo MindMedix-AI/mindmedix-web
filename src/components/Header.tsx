@@ -58,6 +58,9 @@ export default function Header() {
           <a href={l('/#solution')} className="text-sm text-slate-400 hover:text-white transition">
             {t.solution}
           </a>
+          <Link href={l('/blog')} className="text-sm text-slate-400 hover:text-white transition">
+            {t.blog}
+          </Link>
           <Link href={l('/about')} className="text-sm text-slate-400 hover:text-white transition">
             {t.about}
           </Link>
@@ -122,6 +125,7 @@ export default function Header() {
         <div className="md:hidden border-t border-white/5 bg-[#0d2137] px-6 py-4 flex flex-col gap-4">
           <a href={l('/#problem')} className="text-slate-400 hover:text-white" onClick={() => setMobileMenuOpen(false)}>{t.challenge}</a>
           <a href={l('/#solution')} className="text-slate-400 hover:text-white" onClick={() => setMobileMenuOpen(false)}>{t.solution}</a>
+          <Link href={l('/blog')} className="text-slate-400 hover:text-white" onClick={() => setMobileMenuOpen(false)}>{t.blog}</Link>
           <Link href={l('/about')} className="text-slate-400 hover:text-white" onClick={() => setMobileMenuOpen(false)}>{t.about}</Link>
           <Link href={l('/team')} className="text-slate-400 hover:text-white" onClick={() => setMobileMenuOpen(false)}>{t.founder}</Link>
           <a href={l('/#contact')} className="text-[#2d8cff]" onClick={() => setMobileMenuOpen(false)}>{t.contact}</a>
