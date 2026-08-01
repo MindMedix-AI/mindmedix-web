@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server'
 import crypto from 'crypto'
 
 const CLIENT_ID = process.env.GITHUB_OAUTH_CLIENT_ID
-const BASE_URL = process.env.DECAP_BASE_URL || 'https://mindmedixai.health'
+const BASE_URL = process.env.DECAP_BASE_URL || 'https://www.mindmedixai.health'
 const REDIRECT_URI = `${BASE_URL}/api/decap/callback`
 
 export async function GET(request: Request) {

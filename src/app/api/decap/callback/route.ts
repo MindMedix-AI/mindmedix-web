@@ -2,7 +2,7 @@ import { NextResponse, type NextRequest } from 'next/server'
 
 const CLIENT_ID = process.env.GITHUB_OAUTH_CLIENT_ID
 const CLIENT_SECRET = process.env.GITHUB_OAUTH_CLIENT_SECRET
-const BASE_URL = process.env.DECAP_BASE_URL || 'https://mindmedixai.health'
+const BASE_URL = process.env.DECAP_BASE_URL || 'https://www.mindmedixai.health'
 const REDIRECT_URI = `${BASE_URL}/api/decap/callback`
 
 function renderCallbackPage(status: string, payload: unknown): string {
