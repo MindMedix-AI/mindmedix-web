@@ -61,3 +61,4 @@ skills-lock.json
 
 # Decap CMS source maps (not needed in production)
 public/admin/lib/*.map
+.env*
