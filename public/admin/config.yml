@@ -1,15 +1,15 @@
-local_backend: true
-
 backend:
   name: github
   repo: MindMedix-AI/mindmedix-web
   branch: main
-  base_url: https://mindmedixai.health
+  base_url: https://www.mindmedixai.health
   auth_endpoint: api/decap/auth
 
-site_url: https://mindmedixai.health
-display_url: https://mindmedixai.health
+site_url: https://www.mindmedixai.health
+display_url: https://www.mindmedixai.health
 logo_url: /logo.png
+
+publish_mode: editorial_workflow
 
 media_folder: public/images/blog
 public_folder: /images/blog
