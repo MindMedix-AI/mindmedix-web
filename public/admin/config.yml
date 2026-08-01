@@ -9,6 +9,8 @@ site_url: https://www.mindmedixai.health
 display_url: https://www.mindmedixai.health
 logo_url: /logo.png
 
+publish_mode: editorial_workflow
+
 media_folder: public/images/blog
 public_folder: /images/blog
 

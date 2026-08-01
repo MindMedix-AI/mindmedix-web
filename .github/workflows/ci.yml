@@ -15,13 +15,33 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: dorny/paths-filter@v3
+        id: changes
+        with:
+          base: ${{ github.event.pull_request.base.sha || github.event.before }}
+          filters: |
+            code:
+              - '!content/**'
+              - '!public/images/blog/**'
+              - '!public/admin/config.yml'
+      - name: Setup Node
+        if: steps.changes.outputs.code == 'true'
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: 'npm'
-      - run: npm ci
-      - run: npm run lint
-      - run: npm run build
+      - name: Install dependencies
+        if: steps.changes.outputs.code == 'true'
+        run: npm ci
+      - name: Lint
+        if: steps.changes.outputs.code == 'true'
+        run: npm run lint
+      - name: Build
+        if: steps.changes.outputs.code == 'true'
+        run: npm run build
+      - name: Content-only change
+        if: steps.changes.outputs.code == 'false'
+        run: echo "Content-only change detected; heavy checks skipped."
 
   security:
     name: Security Scan
@@ -31,7 +51,23 @@ jobs:
       security-events: write
     steps:
       - uses: actions/checkout@v4
-      - uses: github/codeql-action/init@v3
+      - uses: dorny/paths-filter@v3
+        id: changes
+        with:
+          base: ${{ github.event.pull_request.base.sha || github.event.before }}
+          filters: |
+            code:
+              - '!content/**'
+              - '!public/images/blog/**'
+              - '!public/admin/config.yml'
+      - name: CodeQL Init
+        if: steps.changes.outputs.code == 'true'
+        uses: github/codeql-action/init@v3
         with:
           languages: javascript-typescript
-      - uses: github/codeql-action/analyze@v3
+      - name: CodeQL Analyze
+        if: steps.changes.outputs.code == 'true'
+        uses: github/codeql-action/analyze@v3
+      - name: Content-only change
+        if: steps.changes.outputs.code == 'false'
+        run: echo "Content-only change detected; CodeQL skipped."
